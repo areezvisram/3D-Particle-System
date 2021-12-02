@@ -1,11 +1,6 @@
-## **SFWRENG 3GC3 - Assignment 3**
-#### Areez Visram - visraa7 - 400239951
-#### Neil Lobo - lobon4 - 400242014
+## **OpenGL + GLUT 3D Particle System**
 
 ![image](https://i.imgur.com/HyC89Ca.png)
-
-### **Platform Specifications**
-* OS: Developed on both Mac OS Big Sur Version 11.6, Apple Silicon M1 Chip and Windows 10 10.0.19042 Build 19042
 
 ### **Program Execution**
 Using the makefile, the program can be executed via:
@@ -13,9 +8,6 @@ Using the makefile, the program can be executed via:
 
 To remove the executable run:
 * `clean`: Run `make clean`
-
-Please note that a lot of external classes were created in the `classes` folder. Please compile this program using the
-makefile provided as part of the submission as it has been changed to compile correctly with our file structure.
 
 ### **Main Program**
 **External Libraries Used**:
@@ -53,7 +45,13 @@ A list of the key bindings and the action they pertain to:
 * RIGHT_ARROW - Rotate entire scene negative 5 units on the Y axis
 * LEFT_ARROW - Rotate entire scene positive 5 units on the Y axis
 
-#### **Bonus Features:**
+#### **Features:**
+**Particle Fountain**
+* Particles are generated from a fountain, first being shot upwards and bouncing towards the ground
+* Random initial velocity and direction for every particle
+* Each particle has a lifespan, dying after a certain, random period of time
+* If particles fall off the edge of the floor, they also die
+
 **Particle Cam**
 * Clicking the 'c' key brings the user to particle cam
 * It is a first person view of the particle that most recently came out of the fountain
